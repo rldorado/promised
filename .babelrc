@@ -1,15 +1,24 @@
 {
-  "presets": ["es2015"],
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-flow"
+  ],
   "plugins": [
-    "transform-runtime",
+    ["@babel/plugin-transform-runtime", { "corejs": 3 }],
     "babel-plugin-add-module-exports",
-    "transform-flow-strip-types",
-    "transform-class-properties"
+    "@babel/plugin-transform-flow-strip-types",
+    "@babel/plugin-proposal-class-properties"
   ],
   "env": {
     "test": {
-      "presets": ["es2015", "es2017"],
-      "plugins": ["istanbul", "transform-class-properties"]
+      "presets": [
+        "@babel/preset-env",
+        "@babel/preset-env"
+      ],
+      "plugins": [
+        "istanbul",
+        "@babel/plugin-proposal-class-properties"
+      ]
     }
   }
 }
