@@ -5,17 +5,17 @@
     "sourceType": "module",
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true,
-      "globalReturn": true,
+      "globalReturn": true
     }
   },
-   "globals": {
+  "globals": {
     "document": true,
     "window": true,
     "__VERSION__": true
   },
   "plugins": [],
   "extends": [
-    "airbnb",
+    "airbnb"
   ],
   "rules": {
     "arrow-body-style": [1, "as-needed"],
@@ -24,6 +24,8 @@
     "consistent-return": 0,
     "import/no-unresolved": 0,
     "import/extensions": 0,
-    "import/no-extraneous-dependencies": 0
+    "import/no-extraneous-dependencies": 0,
+    "no-undef": "off",
+    "no-unused-vars": "off"
   }
 }
